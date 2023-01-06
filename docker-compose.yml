@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  one:
+    build: 
+      context: .
+      args:
+        NODE_ENV: production
+    # environment:
+    #     - HOST=http://dev.socialcommerceguys.com
+    #     - SCOPES=write_products
+    #     - SHOPIFY_API_KEY=8fae84c12bca517df893b67e6be001f5
+    #     - SHOPIFY_API_SECRET=380da8c6c94d3fd5e38f38f32ab19289
+    #     - PORT=8082
+    ports:
+      - "4502:4502"
